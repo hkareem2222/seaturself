@@ -1,0 +1,10 @@
+<h1><%= @restaurant[:name] %></h1>
+<p><%= image_tag @restaurant[:image] %></p>
+<p><%= @restaurant[:address] %></p>
+<p><%= @restaurant[:neighborhood] %></p>
+<p>Price Meter: <%= @restaurant[:price] %></p>
+<p><%= @restaurant[:summary] %></p>
+<p><%= link_to @restaurant[:menu], @restaurant[:menu], target: '_blank' %></p>
+
+<p><%= link_to "Edit", edit_restaurant_path %></p>
+<p><%= link_to "Back", restaurants_path %></p>
